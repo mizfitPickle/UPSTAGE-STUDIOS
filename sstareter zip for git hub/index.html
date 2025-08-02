@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upstage Studios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Upstage Studios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feed</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="filter-bar">
+      <button data-tag="all">All</button>
+      <button data-tag="music">Music</button>
+      <button data-tag="dance">Dance</button>
+      <button data-tag="skits">Skits</button>
+      <button data-tag="poetry">Poetry</button>
+      <button data-tag="gaming">Gaming</button>
+    </section>
+
+    <section id="video-feed">
+      <div class="video-card" data-tag="gaming">
+        <video src="videos/demo1.mp4" controls></video>
+        <p>Ghost Shipley - "Let's Play Something New"</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

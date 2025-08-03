@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upstage Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Upstage Studios</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Welcome to Upstage Studios</h1>
-  <p>This is the starting point for the new platform.</p>
+  <header>
+    <h1>Upstage Studios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feed</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem; max-width: 400px; margin: auto;">
+    <h2>Login</h2>
+    <form>
+      <label>
+        Email:<br />
+        <input type="email" name="email" required />
+      </label><br /><br />
+      <label>
+        Password:<br />
+        <input type="password" name="password" required />
+      </label><br /><br />
+      <button type="submit">Log In</button>
+    </form>
+  </main>
 </body>
 </html>

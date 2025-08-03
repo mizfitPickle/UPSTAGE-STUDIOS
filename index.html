@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ping Pong Game</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #111; }
-    canvas { background: #000; border: 4px solid #1DB954; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upstage Studios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <canvas id="pong" width="800" height="500"></canvas>
+  <header>
+    <h1>Upstage Studios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feed</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script>
-    const canvas = document.getElementById("pong");
-    const ctx = canvas.getContext("2d");
+  <main>
+    <section id="filter-bar">
+      <button data-tag="all">All</button>
+      <button data-tag="music">Music</button>
+      <button data-tag="dance">Dance</button>
+      <button data-tag="skits">Skits</button>
+      <button data-tag="poetry">Poetry</button>
+      <button data-tag="gaming">Gaming</button>
+    </section>
 
-    const paddleWidth = 10, paddleHeight = 100;
-    const player = { x: 10, y: canvas.height/2 - paddleHeight/2, width: paddleWidth, height: paddleHeight, color: "#1DB954", score: 0 };
-    const ai = { x: canvas.width - paddleWidth - 10, y: canvas.height/2 - paddleHeight/2, width: paddleWidth, height: paddleHeight, color: "#1DB954", score: 0 };
-    const ball = { x: canvas.width/2, y: canvas.height/2, radius: 10, speed: 5, velocityX: 5, velocityY: 5, color: "#fff" };
+    <section id="video-feed">
+      <div class="video-card" data-tag="gaming">
+        <video src="videos/demo1.mp4" controls></video>
+        <p>Ghost Shipley - "Let's Play Something New"</p>
+      </div>
+      <div class="video-card" data-tag="music">
+        <video src="videos/demo2.mp4" controls></video>
+        <p>Andrea Dew - "Guitar Loops Live"</p>
+      </div>
+      <div class="video-card" data-tag="dance">
+        <video src="videos/demo3.mp4" controls></video>
+        <p>Aaron Great - "Dance Practice #1"</p>
+      </div>
+    </section>
+  </main>
 
-    function drawRect(x, y, w, h, color) {
-      ctx.fillStyle = color;
-      ctx.fillRect(x, y, w, h);
-    }
-
-    function drawCircle(x, y, r, color) {
-      ctx.fillStyle = color;
-      ctx.beginPath();
-      ctx.arc(x, y, r, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.fill();
-    }
-
-    function drawNet() {
-      for (let i = 0; i <= canvas.height; i += 20) {
-        drawRect(canvas.width/2 - 1, i, 2, 10, "#fff");
-      }
-    }
-
-    function drawText(text, x, y) {
-      ctx.fillStyle = "#fff";
-      ctx.font = "35px Arial";
-      ctx.fillText(text,
+  <script src="js/main.js"></script>
+</body>
+</html>

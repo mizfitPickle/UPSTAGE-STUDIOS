@@ -1,6 +1,6 @@
 // Supabase config
-const supabaseUrl = 'https://YOUR_PROJECT_ID.supabase.co';
-const supabaseKey = 'YOUR_PUBLIC_ANON_KEY';
+const supabaseUrl = 'https://Upstage Studios.supabase.co';
+const supabaseKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN0dmdkZHZidmh3d2xnbXhrY2xxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQyMDk4MzIsImV4cCI6MjA2OTc4NTgzMn0.bMsUOlvC46hyKmDyMtl33iCRkTzRk_NQm5OEqb0GDoc;
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 // Handle form submission

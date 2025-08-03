@@ -1,1 +1,88 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2c2c2c;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1DB954;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #1DB954;
+}
+
+/* Filter Buttons */
+#filter-bar {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background-color: #181818;
+  border-bottom: 1px solid #2a2a2a;
+}
+#filter-bar button {
+  background: none;
+  color: #ffffff;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#filter-bar button:hover,
+#filter-bar button.active {
+  background-color: #1DB954;
+  color: #000;
+  border-color: #1DB954;
+}
+
+/* Video Cards */
+#video-feed {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.video-card {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+.video-card video {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.video-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
 

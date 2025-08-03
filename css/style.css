@@ -1,100 +1,59 @@
-body, html {
+/* Reset + Base Setup */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik Wet Paint', cursive;
+  color: #00ffff;
+}
+
+body, html {
   height: 100%;
-  font-family: 'Orbitron', sans-serif;
-  color: #00ccff;
   overflow: hidden;
 }
 
-.video-bg video {
+/* Background Video Styling */
+.video-bg {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
   z-index: -1;
-  filter: brightness(0.4) blur(2px);
+  overflow: hidden;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.5);
 }
 
-/* Nav Bar */
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
   font-size: 24px;
-  color: #00ff5a;
   font-weight: bold;
+  color: #00ff66;
 }
 
-.navbar nav a {
-  color: #00ccff;
-  margin-left: 25px;
+nav a {
+  margin-left: 20px;
   text-decoration: none;
-  transition: 0.3s;
+  color: #00ffff;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-.navbar nav a:hover {
-  color: #00ffea;
+nav a:hover {
+  color: #00ffcc;
 }
 
-/* Hero Section */
+/* Welcome Section */
 .hero {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero h1 {
-  font-size: 48px;
-  color: #00ffd0;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-/* Signup Form */
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 280px;
-  margin: 0 auto;
-}
-
-.signup-form input {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background: #111;
-  color: #00ccff;
-  font-size: 14px;
-}
-
-.signup-form input::placeholder {
-  color: #aaa;
-}
-
-.signup-form button {
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  background: #00ff5a;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.signup-form button:hover {
-  background: #00ffaa;
-}
+  posit

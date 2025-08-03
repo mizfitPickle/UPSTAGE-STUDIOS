@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upstage Studios - Alpha</title>
+  <title>Upstage Studios - Alpha Phaze</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Header -->
   <header class="navbar">
     <div class="logo">Upstage Studios</div>
     <nav>
@@ -20,38 +20,35 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Welcome Section -->
   <section class="hero">
     <h1>Welcome to the Alpha Phaze</h1>
     <p>Enter the vibe early. Get on the list.</p>
 
-    <form class="signup-form" action="confirmation.html" method="GET">
-  <input type="text" name="first_name" placeholder="First Name" required />
-  <input type="text" name="last_name" placeholder="Last Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <input type="tel" name="phone" placeholder="Phone Number" /> <!-- Optional now -->
-  <input 
-    type="password" 
-    name="password" 
-    placeholder="Password" 
-    required 
-    pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{};':\"\\|,.<>/?]).{6,}" 
-    title="Password must include at least one capital letter, one number, and one special character"
-  />
- <input 
-  type="password" 
-  name="password" 
-  placeholder="Password" 
-  required 
-  pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{};':\"\\|,.<>/?]).{6,}" 
-/>
+    <form class="signup-form">
+      <input type="text" name="first_name" placeholder="First Name" required />
+      <input type="text" name="last_name" placeholder="Last Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number (optional)" />
 
-<div class="password-rules">
-  Must include a capital letter, number, and special character
-</div>
-  <button type="submit">Jump Into the Experience</button>
-</form>
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Password" 
+        required 
+        pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{};':\"\\|,.<>/?]).{6,}" 
+      />
+      <div class="password-rules">
+        Must include a capital letter, number, and special character
+      </div>
+
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+
+      <button type="submit">Jump Into the Experience</button>
+    </form>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/signup.js"></script>
 </body>
 </html>

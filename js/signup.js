@@ -17,6 +17,10 @@ document.querySelector('.signup-form').addEventListener('submit', async (e) => {
   const { error } = await supabase.from('users').insert([
     { first_name, last_name, email, phone, password }
   ]);
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  console.log("Form submitted"); // <-- Add this
+  ...
 
   if (error) {
     alert('Signup failed: ' + error.message);

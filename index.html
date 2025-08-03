@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Upstage Alpha</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <title>Upstage Studios - Alpha</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Video Background -->
   <div class="video-bg">
     <video autoplay muted loop id="bg-video">
-      <source src="assets/smoke_loop.mp4" type="video/mp4"/>
+      <source src="assets/smoke_loop.mp4" type="video/mp4" />
       Your browser does not support video.
     </video>
   </div>
 
+  <!-- Header / Navigation -->
   <header class="navbar">
-    <h1 class="brand">Upstage Studios</h1>
+    <div class="logo">Upstage Studios</div>
     <nav>
       <a href="#">Feed</a>
       <a href="#">Upload</a>
@@ -25,17 +28,19 @@
     </nav>
   </header>
 
-  <main class="hero">
-    <h2>welcome to the alpha</h2>
-    <p>this isn’t public. this is pre-public.<br>you found it — or it found you.</p>
+  <!-- Welcome Text + Form -->
+  <section class="hero">
+    <h1>Welcome to the Alpha</h1>
+    <p>Enter the vibe early. Get on the list.</p>
 
     <form class="signup-form">
-      <input type="text" name="firstName" placeholder="First Name" required />
-      <input type="text" name="lastName" placeholder="Last Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
       <button type="submit">Sign Up</button>
     </form>
-  </main>
+  </section>
+
 </body>
 </html>

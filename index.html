@@ -26,14 +26,28 @@
     <p>Enter the vibe early. Get on the list.</p>
 
     <form class="signup-form" action="confirmation.html" method="GET">
-      <input type="text" name="first_name" placeholder="First Name" required />
-      <input type="text" name="last_name" placeholder="Last Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
-      <button type="submit">Jump Into the Experience</button>
-    </form>
+  <input type="text" name="first_name" placeholder="First Name" required />
+  <input type="text" name="last_name" placeholder="Last Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="tel" name="phone" placeholder="Phone Number" /> <!-- Optional now -->
+  <input 
+    type="password" 
+    name="password" 
+    placeholder="Password" 
+    required 
+    pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{};':\"\\|,.<>/?]).{6,}" 
+    title="Password must include at least one capital letter, one number, and one special character"
+  />
+  <input 
+    type="password" 
+    name="confirm_password" 
+    placeholder="Confirm Password" 
+    required 
+    pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+=[\]{};':\"\\|,.<>/?]).{6,}" 
+    title="Password must include at least one capital letter, one number, and one special character"
+  />
+  <button type="submit">Jump Into the Experience</button>
+</form>
   </section>
 
 </body>

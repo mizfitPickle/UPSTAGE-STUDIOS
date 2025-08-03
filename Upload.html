@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload | Upstage Studios</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Upstage Studios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Feed</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h2>Upload Video</h2>
+    <form>
+      <label>
+        Title:<br />
+        <input type="text" name="title" required />
+      </label><br /><br />
+      <label>
+        Category:<br />
+        <select name="tag" required>
+          <option value="">Select</option>
+          <option value="music">Music</option>
+          <option value="dance">Dance</option>
+          <option value="skits">Skits</option>
+          <option value="poetry">Poetry</option>
+          <option value="gaming">Gaming</option>
+        </select>
+      </label><br /><br />
+      <label>
+        Video File:<br />
+        <input type="file" accept="video/*" required />
+      </label><br /><br />
+      <button type="submit">Upload</button>
+    </form>
+  </main>
+</body>
+</html>
 

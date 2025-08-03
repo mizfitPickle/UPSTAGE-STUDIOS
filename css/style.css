@@ -13,7 +13,7 @@ body, html {
   background: black;
 }
 
-/* Background Video Container */
+/* Background Video */
 .video-bg {
   position: fixed;
   inset: 0;
@@ -107,4 +107,25 @@ form input::placeholder {
 }
 
 form input:focus {
-  box-shadow: 0 0 12px rgba(0, 255,
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* Submit Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #00ff66; /* Upstage green */
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00cc55;
+}

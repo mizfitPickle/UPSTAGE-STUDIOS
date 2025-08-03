@@ -1,4 +1,4 @@
-/* Reset + Base Setup */
+/* Global Reset and Setup */
 * {
   margin: 0;
   padding: 0;
@@ -10,50 +10,26 @@
 body, html {
   height: 100%;
   overflow: hidden;
+  background: black;
 }
 
-/* Background Video Styling */
+/* Background Video */
 .video-bg {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
   object-fit: cover;
+  z-index: -1;
   filter: blur(6px) brightness(0.5);
 }
 
-/* Navigation Bar */
+/* Navigation */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background: rgba(0, 0, 0, 0.6);
-  position: relative;
-  z-index: 1;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #00ff66;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #00ffff;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00ffcc;
-}
-
-/* Welcome Section */
-.hero {
-  posit
+  position:
